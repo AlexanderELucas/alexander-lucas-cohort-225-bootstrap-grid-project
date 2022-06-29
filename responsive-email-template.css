@@ -8,10 +8,79 @@
 
 
 body {
-    margin: 30px;
-    /* text color EDF2F4*/
-    /* color: #EDF2F4; */
+    /* set text color to EDF2F4*/
+    color: #EDF2F4;
+    
 }
-.my-container {
-    border: 5px solid blue;
+
+/* set all non logo nav elements to black and slowly transitions to white on hover */
+.top-nav {
+    color: #000000;
+    transition: 0.3s;
+}
+
+.top-nav:hover {
+    color: #ffffff;
+
+}
+
+/* set background of email select cards */
+.email-select {
+    background-color: #20a4f3;
+    transition: 0.2s;
+}
+
+.email-select:hover {
+    box-shadow: 0 0 15px 3px #Edf2f4;
+}
+
+ /* .container {
+    border: 1px solid blue;
+}
+
+.col {
+    border: 1px solid red;
+}  */
+
+.navbar {
+    background-color: #20a4f3;
+}
+
+.nav-button {
+    border: none;
+}
+
+.offcanvas-fullscreen {
+    width: 95%;
+    height: 95%;
+    margin: 20px 20px 20px 20px;
+}
+
+
+#meatball-menu-small, #meatball-menu-large {
+    margin-top: 100px;
+    background-color: #2D4739;
+}
+
+.sidebar {
+    background-color: #2D4739;
+    height: calc(100vh - 101px);
+    
+}
+
+.email-select-container {
+    padding: 0px;
+}
+
+.sidebar {
+    background-color: #2D4739;
+}
+.email-stream {
+    background-color: #2b2118;
+    
+}
+
+.message-stream {
+    max-height: calc(100vh - 101px);
+    
 }
