@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Very Good Email Provider</title>
 <!-- bootstrap CSS link -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <!-- bootstrap Icon link -->
@@ -17,6 +17,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
+            <!-- NAVBAR -->
             <nav class="navbar navbar-expand-sm">
                 <!-- creates BSgrid inside nav -->
                 <div class="container-fluid justify-content-center">
@@ -65,7 +66,7 @@
             <!-- OFFCANVAS HAMBURGER MENU -->
             <div class="offcanvas-md offcanvas-start col-md-2 col-xl-2 sidebar" id="hamburger-menu">
                     <div class="row">
-                        <div class="col m-0 sidebar">
+                        <div class="d-flex flex-column justify-content-around m-0 py-5 sidebar">
                             <p class="d-flex justify-content-start">Inbox</p>
                             <p class="d-flex justify-content-around">Primary</p>
                             <p class="d-flex justify-content-around">Urgent</p>
@@ -85,7 +86,7 @@
             <!-- MESSAGE STREAM -->
             <div class="col flex-grow-2 email-stream mh-100">
 
-                <div class="container message-stream">
+                <div class="container message-stream overflow-scroll">
                     <div class="row">
                         <div class="col email-select-container">
                             <div class="container email-select mt-2 mb-2  ">
@@ -325,9 +326,47 @@
 
 
             <!-- READ EMAIL -->
-            <div class="col-xl-6 d-xs-none ">
-
+            <div class="col-xl-6 d-none d-lg-block email-read pt-4 ">
+                <div class="d-flex flex-column">
+                    <div class="container">
+                        <div class="row">
+                            <!-- sender -->
+                            <div class="col-8">
+                                <h5>SENDER</h5>
+                            </div>
+                            <!-- time/date -->
+                            <!-- time/date drops below Sender line on Md and larger viewports -->
+                            <div class="col-2 col-md-5">
+                                <h7>TIME/DATE</h7>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- subject matter -->
+                            <div class="coloumn">
+                            <h3>SUBJECT MATTER</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada mi lectus, vitae condimentum felis imperdiet ac. Proin et quam in nulla pellentesque semper sollicitudin quis nulla. In condimentum massa id mi porta, egestas ultricies diam venenatis.</p>
+                        <p>Sed eu nisi consequat, volutpat velit in, sagittis arcu. Aenean porta elementum ipsum. Ut vel ligula nulla. Nam id laoreet sem, quis sodales massa. Pellentesque bibendum tortor eu ex viverra, vitae mollis mi congue. Duis porta eleifend arcu, eu lacinia enim semper facilisis. Vivamus a iaculis metus, ac molestie sem. Pellentesque varius, turpis eget scelerisque molestie, nibh odio varius dui, vitae rutrum est tortor vitae nibh.</p> 
+                        <p>sodales consequat cursus. Etiam pharetra felis eget consequat aliquet. Vestibulum vitae arcu mauris. Donec sit amet tincidunt turpis. Vestibulum at urna ut libero placerat accumsan. Nunc consectetur sodales nisi vitae egestas. Morbi tristique eleifend arcu a sodales. Etiam nec risus urna. Aliquam mollis nisi vel tellus pharetra dapibus. Integer eget est ligula.</p>
+                    </div>
+                    <!-- RESPOND TO EMAIL -->
+                    <form>
+                        <label for="email-respond" class="form-label ps-3">Respond</label>
+                        <textarea id="email-respond" name="respond" class="form-control"  placeholder="Reply..." rows="5"></textarea>
+                        <div class="d-flex flex-row-reverse me-4">
+                            <button class="email-respond-button" type="submit" >SEND</button>
+                        </div>                    
+                    </form>
             </div>
+
+
+
+
+
+            
 
 
 
@@ -353,6 +392,47 @@
 
 
 
+
+    </div>
+
+
+
+
+    <!-- CREATE EMAIL-NEW BUTTON TO PULL NEW EMAIL SCREEN  -->
+    <!-- Compose Email Popup Modal/Offcanvas -->
+    <div class="offcanvas offcanvas-fullscreen" id="email-new">
+        <button class="offcanvas-fullscreen-close">
+            <span class="fa-solid fa-xmark"></span>
+        </button>
+        <!-- form -->
+        <form class="container email-send">
+            <!-- "recipient" -->
+            <div class="form-group mb-5">
+                <label for="email-recipient">Recipient</label>
+                <!-- email field with placeholder -->
+                <input type="email" class="form-control" id="email-recipient" placeholder="Email address">
+                <!-- "subject" -->
+                <label for="email-subject">Subject</label>
+                <!-- subject field with placeholder -->
+                <input class="form-control" id="email-subject" placeholder="Subject matter">
+            </div>
+
+            <div class="form-group">
+                <!-- "message" -->
+                <label for="email-message">Message</label>
+                <!-- message field with "type message..." placeholder -->
+                <textarea id="email-message" name="message" class="form-control" placeholder="Type message..."></textarea>
+            </div>
+
+            <!-- send button that closes window in bottom right corner [closes modal/offcanvas] -->
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col offset-11">
+                        <button type="submit">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </form>
 
     </div>
 

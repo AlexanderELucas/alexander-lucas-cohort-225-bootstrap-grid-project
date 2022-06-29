@@ -82,5 +82,22 @@ body {
 
 .message-stream {
     max-height: calc(100vh - 101px);
+    color: #EDF2F4;
     
+}
+
+.email-read {
+    border-left: 15px solid#2D4739;
+    background-color: #EDF2F4;
+    color: #2b2118;
+    
+}
+
+.email-respond-button {
+    background-color:#2b2118;
+    color:#EDF2F4
+}
+
+#email-respond {
+    border: 5px solid #2D4739;
 }
