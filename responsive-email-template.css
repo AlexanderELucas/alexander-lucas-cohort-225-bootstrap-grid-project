@@ -1,11 +1,3 @@
-/* Hex codes
-    Text EDF2F4
-    Nav 20A4F3
-    Sidebar 2D4739
-    MStream background 2B2118
-    logo base 1E3AB2
-*/
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -210,4 +202,3 @@ body {
 .compose-exit-button:hover {
     color: #2b2118;
 }
-
