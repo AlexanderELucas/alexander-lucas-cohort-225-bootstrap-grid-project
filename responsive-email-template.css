@@ -27,6 +27,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: #20a4f3;
+    border-bottom: 10px solid #2D4739;
 }
 /* set all non logo nav elements to black and slowly transitions to #EDF2F4 on hover */
 .nav-button {
@@ -115,14 +116,6 @@ body {
 
 
 
-/* Email Popup */
-.offcanvas-fullscreen {
-    width: 95%;
-    /* height: 95%; */
-    margin: 20px 20px 20px 20px;
-}
-
-
 
 /* Meatball menu appearance size % change at breakpoints */
 #meatball-menu {
@@ -182,3 +175,40 @@ body {
 .exit-button:hover {
     color: #2b2118;
 }
+
+
+/* Compose Button */
+#compose-button, #email-send-button {
+    margin-left: 115px;
+    margin-bottom: 20px;
+    background-color: #EDF2F4;
+    color: #2b2118;
+    border: none;
+    transition: 0.3s;
+}
+#compose-button:hover, #email-send-button:hover {
+    background-color: #cdd3d5;
+    color: #2b2118;
+    border: none;
+}
+
+
+
+
+/* Send New Email */
+#email-new {
+    background-color: #2D4739;
+    color: #EDF2F4;
+    width: 75%;
+    height: 60%;
+
+}
+.compose-exit-button {
+    background-color: #2D4739;
+    color: #EDF2F4;
+    border: none;
+}
+.compose-exit-button:hover {
+    color: #2b2118;
+}
+
