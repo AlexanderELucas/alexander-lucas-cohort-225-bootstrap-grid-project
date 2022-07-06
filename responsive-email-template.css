@@ -2,7 +2,7 @@
     Text EDF2F4
     Nav 20A4F3
     Sidebar 2D4739
-    MStream bkgd 2B2118
+    MStream background 2B2118
     logo base 1E3AB2
 */
 
@@ -31,7 +31,7 @@ body {
 /* set all non logo nav elements to black and slowly transitions to #EDF2F4 on hover */
 .nav-button {
     border: none;
-    color:: #2b2118;
+    color: #2b2118;
     transition: 0.5s;
 }
 .nav-button:hover {
@@ -124,7 +124,7 @@ body {
 
 
 
-/* Meatball menu apperance size % change at breakpoints */
+/* Meatball menu appearance size % change at breakpoints */
 #meatball-menu {
     margin-top: 101px;
     background-color: #2D4739;
@@ -181,17 +181,4 @@ body {
 }
 .exit-button:hover {
     color: #2b2118;
-}
-
-
-
-
-
-
-
-
-
-
-.show-me {
-    border: 1px solid red;
 }
